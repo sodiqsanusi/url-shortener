@@ -12,6 +12,11 @@
 /.next/
 /out/
 
+#personal
+/design
+*.md
+!README.md
+
 # production
 /build
 
