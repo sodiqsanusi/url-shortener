@@ -22,18 +22,20 @@ const Form = () => {
   }
 
   return ( 
-    <form noValidate onSubmit={handleSubmit} className={styles.container}>
-      <div>
-        <input
-         type="url" placeholder="Shorten a link here..."
-         value={url}
-         onChange={(e) => setUrl(e.target.value)}
-         className={styles[isUrlInvalid]}
-        />
-        {isUrlInvalid && <p className={styles.errMessage}>Please add a valid link</p>}
-      </div>
-      <button>Shorten it!</button>
-    </form>
+    <div className={styles.formContainer}>
+      <form noValidate onSubmit={handleSubmit} className={styles.container}>
+        <div>
+          <input
+          type="url" placeholder="Shorten a link here..."
+          value={url}
+          onChange={(e) => setUrl(e.target.value)}
+          className={styles[isUrlInvalid]}
+          />
+          {isUrlInvalid && <p className={styles.errMessage}>Please add a valid link</p>}
+        </div>
+        <button>Shorten it!</button>
+      </form>
+    </div>  
   );
 }
  
