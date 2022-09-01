@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import logoImage from '../../public/logo.svg';
 import styles from './Navbar.module.css'
@@ -13,7 +14,7 @@ const Navbar = () => {
 
   return ( 
     <nav className={styles.container}>
-      <a href="/" className={styles.logo}><Image src={logoImage} alt='The Shortly logo' /></a>
+      <Link href="/"><a className={styles.logo}><Image src={logoImage} alt='The Shortly logo' /></a></Link>
       <button className={styles.navButton} onClick={navButtonClicked}>
         {!isMobileNavOpen && (
           <>
@@ -32,11 +33,11 @@ const Navbar = () => {
       {isMobileNavOpen && (
         <aside className={styles.mobileNav}>
           <ul>
-            <a href="#">Features</a>
-            <a href="#">Pricing</a>
-            <a href="#">Resources</a>
+            <Link href="#"><a>Features</a></Link>
+            <Link href="#"><a>Pricing</a></Link>
+            <Link href="#"><a>Resources</a></Link>
           </ul>
-          <a href="#">Login</a>
+          <Link href="#"><a>Login</a></Link>      
           <button>Sign Up</button>
         </aside>
       )}
