@@ -1,0 +1,35 @@
+.header{
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+.headerImage{
+  position: relative;
+  left: 15%;
+  width: 120%;
+}
+.headerArticle{
+  text-align: center;
+  width: 85%;
+  margin: 1em auto 2em;
+}.headerArticle h1{
+  color: #35323e;
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: .4em;
+}.headerArticle p{
+  color: hsl(257, 7%, 63%);
+  font-size: .9rem;
+  font-weight: 500;
+  margin-bottom: 1.5em;
+}.headerArticle button{
+  border: none;
+  outline: none;
+  background-color: #2acfcf ;
+  color: #fff;
+  padding: .5em 0;
+  border-radius: 20px;
+  width: 60%;
+  max-width: 155px;
+}
