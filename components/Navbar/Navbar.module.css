@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2em 1em;
+  padding: 2em 1em 1em;
   position: relative;
 }
 .logo{
@@ -39,11 +39,12 @@
   background-color: #3b3054;
   flex-direction: column;
   position: absolute;
-  bottom: -300%;
+  bottom: min(-380%, -320px);
   left: 50%;
   transform: translateX(-50%);
   border-radius: 8px;
   padding: 2.5em 1.5em;
+  z-index: 2;
 }.mobileNav ul{
   padding: 0%;
   display: flex;
