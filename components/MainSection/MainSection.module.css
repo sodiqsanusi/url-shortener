@@ -1,0 +1,64 @@
+.container{
+  padding: 4em 1em 3em;
+  background-color: #bfbfbf6c;
+}
+.mainArticle{
+  text-align: center;
+}.mainArticle h2{
+  color: #232127;
+  font-size: 1.4rem;
+  margin-bottom: .5em;
+}.mainArticle p{
+  color: #9e9aa7;
+  font-size: .9rem;
+}
+
+.cardList{
+  display: flex;
+  flex-direction: column;
+  row-gap: 5em;
+  padding: 5em 0 3em;
+  list-style: none;
+}
+.card{
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5em 1.5em 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+.card div{
+  max-width: 95px;
+  background-color: #3b3054;
+  padding: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  top: -15%;
+}.card h3{
+  color: #232127;
+  font-size: 1.2rem;
+  margin-bottom: .7em;
+}.card p{
+  color: #9e9aa7;
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+.listRule{
+  width: 7px;
+  height: 80%;
+  background-color: #2acfcf;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  z-index: 1;
+}
