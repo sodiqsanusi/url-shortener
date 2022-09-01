@@ -31,3 +31,10 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 /* End of reset (Added the font-family) */
+button{
+  transition: .3s;
+  cursor: pointer;
+}button:hover, button:focus{
+  transform: scale(0.95);
+  opacity: 80%;
+}
