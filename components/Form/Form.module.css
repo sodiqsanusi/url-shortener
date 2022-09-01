@@ -8,14 +8,16 @@
   background-repeat: no-repeat;
   background-size: 75%;
   border-radius: 8px;
+}.container div{
+  margin-bottom: .5em;
 }
 .container input{
   width: 100%;
   outline: none;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   border-radius: 5px;
   padding: .5em 1em;
-  margin-bottom: .5em;
+  margin-bottom: .2em; 
 }.container input::placeholder{
   font-size: .9rem;
   color: hsl(257, 7%, 63%);
@@ -28,4 +30,11 @@
   color: #fff;
   padding: .5em 0;
   border-radius: 5px;
+}
+.errMessage{
+  color: #f46262;
+  font-size: .7rem;
+}
+.container .true{
+  border-color: #f46262;
 }
