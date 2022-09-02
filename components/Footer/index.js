@@ -41,7 +41,7 @@ const Footer = () => {
         </li>
       </ul>
       <ul className={styles.imgList}>
-        <li><a href="https://github.com/sodiqsanusi" target='_blank'><Image src={facebookLogo} alt='Click to go to Github profile of the developer.'/></a></li>
+        <li><a href="https://github.com/sodiqsanusi" target='_blank' rel='noreferrer'><Image src={facebookLogo} alt='Click to go to Github profile of the developer.'/></a></li>
         <li><Link href='#'><a><Image src={twitterLogo} alt=''/></a></Link></li>
         <li><Link href='#'><a><Image src={pinterestLogo} alt=''/></a></Link></li>
         <li><Link href='#'><a><Image src={instaLogo} alt=''/></a></Link></li>
