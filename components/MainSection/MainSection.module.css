@@ -55,10 +55,10 @@
 
 .listRule{
   width: 7px;
-  height: 80%;
+  height: max(80%, 500px);
   background-color: #2acfcf;
   position: absolute;
   left: 50%;
-  transform: translate(-50%, 20%);
+  transform: translate(-50%, 40%);
   z-index: 1;
 }
