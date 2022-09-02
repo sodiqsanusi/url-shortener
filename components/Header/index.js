@@ -5,7 +5,7 @@ import styles from './Header.module.css';
 const Header = () => {
   return ( 
     <header className={styles.header}>
-      <div className={styles.headerImage}><Image src={headerImage} alt='' aria-hidden='true' role='presentation'/></div>
+      <div className={styles.headerImage}><Image src={headerImage} alt='' aria-hidden='true' role='presentation' priority/></div>
       <article className={styles.headerArticle}>
         <h1>More than just shorter links</h1>
         <p>

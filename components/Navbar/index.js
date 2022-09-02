@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return ( 
     <nav className={styles.container}>
-      <Link href="/"><a className={styles.logo}><Image src={logoImage} alt='The Shortly logo' /></a></Link>
+      <Link href="/"><a className={styles.logo}><Image src={logoImage} alt='The Shortly logo' priority/></a></Link>
       <button className={styles.navButton} onClick={navButtonClicked}>
         {!isMobileNavOpen && (
           <>
