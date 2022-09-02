@@ -1,0 +1,24 @@
+.container{
+  text-align: center;
+  padding: 4em 1em;
+  background-color: #3b3054;
+  background-image: url('/bg-boost-mobile.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container h2{
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: .5em;
+}.container button{
+  border: none;
+  outline: none;
+  background-color: #2acfcf ;
+  color: #fff;
+  padding: .5em 0;
+  border-radius: 20px;
+  width: 60%;
+  max-width: 155px;
+}
