@@ -32,7 +32,7 @@ const Form = () => {
             throw Error
           }
           changeFetchValidation(false);
-          changeShortenedLinks(allShortenedLinks => [...allShortenedLinks, data])
+          changeShortenedLinks(allShortenedLinks => [data, ...allShortenedLinks])
         }
       ).catch(
         err => {

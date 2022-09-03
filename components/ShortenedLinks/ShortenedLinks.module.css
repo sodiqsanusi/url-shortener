@@ -1,0 +1,43 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  background-color: #EFF1F7;
+  padding: 2em 1em;
+  row-gap: 1em;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1em 0;
+  border-radius: 5px;
+}
+
+.card p{
+  color: #232127;
+  font-size: .95rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0em 0 .5em 5%;
+  border-bottom: 1px solid #bfbfbfce;
+}.card a{
+  font-size: .9rem;
+  padding: .5em 0 .5em 5%;
+  color: #2acfcf;
+  text-decoration: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}.card a:hover, .card a:focus{
+  text-decoration: underline;
+}.card button{
+  width: 90%;
+  margin: .5em auto;
+  border: none;
+  outline: none;
+  background-color: #2acfcf ;
+  color: #fff;
+  padding: .5em 0;
+  border-radius: 5px;
+}
