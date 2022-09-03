@@ -6,7 +6,7 @@ const fetcher = (...args) => fetch(...args).then((res) => res.json())
 
 const Form = () => {
 
-  let {changeShortenedLinks} = useContext(GlobalContext)
+  let {changeShortenedLinks, allShortenedLinks} = useContext(GlobalContext)
 
   let [url, setUrl] = useState('')
   let [isUrlInvalid, changeValidation] = useState(false);
@@ -33,6 +33,7 @@ const Form = () => {
           }
           changeFetchValidation(false);
           changeShortenedLinks(allShortenedLinks => [data, ...allShortenedLinks])
+          window.localStorage.setItem('links', JSON.stringify([data, ...allShortenedLinks]))
         }
       ).catch(
         err => {
