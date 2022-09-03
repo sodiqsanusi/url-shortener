@@ -47,7 +47,7 @@
   .container{
     display: flex;
     align-items: baseline;
-    background-image: url('../../public/bg-shorten-desktop.svg');
+    background-image: url('/bg-shorten-desktop.svg');
     background-size: cover;
     justify-content: space-between;
     padding: 1.5em 2em;
