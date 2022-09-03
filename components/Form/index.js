@@ -2,8 +2,6 @@ import { useState, useContext } from 'react';
 import {GlobalContext} from '../../GlobalContext';
 import styles from './Form.module.css';
 
-const fetcher = (...args) => fetch(...args).then((res) => res.json())
-
 const Form = () => {
 
   let {changeShortenedLinks, allShortenedLinks} = useContext(GlobalContext)
