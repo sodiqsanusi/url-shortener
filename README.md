@@ -1,34 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Link Shortener
 
-## Getting Started
+## Table of contents
 
-First, run the development server:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Overview
+The goal was to build a web app that can create shortened URLs of an inputted link. This web app should also save the shortened links in the browser's webStorage, in a way that refreshing the browser doesn't remove the already shortened URLs. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### The challenge
+Users should be able to:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- View the optimal layout for the site depending on their device's screen size.
+- Shorten any valid URL.
+- See a list of their shortened links, even after refreshing the browser.
+- Copy the shortened link to their clipboard in a single click.
+- Receive an error message when the form is submitted if:
+  - The input field is empty.
+  - The input is not a valid URL.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Screenshot
+![](./screenshot.png)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Links
+- Solution URL: [https://github.com/sodiqsanusi/url-shortener/](https://github.com/sodiqsanusi/url-shortener/)
+- Live Site URL: [https://shortenedlinks.netlify.app/](https://shortenedlinks.netlify.app/)
 
-## Learn More
+## My process
+Wow, this one was a whirlwind. Same old process by the way, if you don't know the old process, you can check [an older project I've built](https://github.com/sodiqsanusi/bookmark-landing-page#my-process), it's documented there. But, something new happened here😅. I was frustrated at a point during building this, that I skipped making functionalities for making it responsive for large screens. Did the functionalities last. After yelling at my PC, lol.
 
-To learn more about Next.js, take a look at the following resources:
+### Built with
+- Mobile-first workflow
+- [Next.js](https://nextjs.org/) - React framework
+- CSS Modules - For styles
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### What I learned
+Damn. A lot of new things here.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Getting and saving things in the browser's webStorage using either `localStorage` or `sessionStorage` web APIs.
+- Using the Clipboard web API for copy & paste functionalities.
+- A deeper understanding of react hooks.
+- Better usage of client-side code in a static site generator (Next.js).
 
-## Deploy on Vercel
+The fact that I was doing a lot of new things definitely kept me very motivated until the end of this project, although it also made me run into a lot of bugs earlier in the development😂.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Continued development
+Planning to start creating web apps/sites that has a functionality or design that I haven't worked on ever. Learning new things has this good feeling for real real. Will also brush up on my knowledge of web APIs, they are actually quite cool to use in projects (and very useful too!)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+> Random question. Headsets or a bass speaker?
+
+### Useful resources
+- [localStorage in JavaScript: A complete guide - LogRocket Blog](https://blog.logrocket.com/localstorage-javascript-complete-guide/) - Like I said earlier, using the webStorage APIs were new to me, this helped a lot in making things easier to learn (along with the MDN docs).
+- [shrtcode API Documentation](https://shrtco.de/docs) - The API I used in creating the short URLs. The docs are self-explanatory, so it was really easy implementing it in the project.
+## Author
+- Twitter - [@sodiqsanusi0](https://www.twitter.com/sodiqsanusi0)
+- LinkedIn - [Sodiq Sanusi](https://www.linkedin.com/in/sodiqsanusi0)
+
+## Acknowledgments
+Uhmm, this one will go to Bernard, for introducing me to web development accidentally (funny how you link situations to crazy coincidences right?)
