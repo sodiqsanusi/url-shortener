@@ -11,7 +11,7 @@ const Footer = () => {
   return ( 
     <footer className={styles.container}>
       <Link href='/'>
-        <a className={styles.footerImg}><Image src={logoImage} alt='Click to go to the homepage' aria-hidden='true' role='presentation'/></a>
+        <a className={styles.footerImg}><Image src={logoImage} alt='Click to go to the homepage'/></a>
       </Link>
       <ul className={styles.mainListContainer}>
         <li className={styles.linkList}>
