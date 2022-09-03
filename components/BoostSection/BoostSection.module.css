@@ -22,3 +22,13 @@
   width: 60%;
   max-width: 155px;
 }
+
+@media(min-width: 670px){
+  .container{
+    background-image: url('/bg-boost-desktop.svg');
+    padding: 3em 1em;
+  }
+  .container h2{
+    font-size: 2rem;
+  }
+}

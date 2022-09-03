@@ -41,6 +41,17 @@ const Navbar = () => {
           <button>Sign Up</button>
         </aside>
       )}
+      <div className={styles.largeNav}>
+        <ul>
+          <li><Link href="#"><a>Features</a></Link></li>
+          <li><Link href="#"><a>Pricing</a></Link></li>
+          <li><Link href="#"><a>Resources</a></Link></li>
+        </ul>
+        <ul className={styles.largeNav2}>
+          <li><Link href="#"><a>Login</a></Link></li>
+          <button>Sign Up</button>
+        </ul>
+      </div>
     </nav>
   );
 }

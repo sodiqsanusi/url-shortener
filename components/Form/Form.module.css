@@ -1,6 +1,6 @@
 .formContainer{
   background-color: #fff;
-  background-image: linear-gradient(to bottom, #fff 45%, #bfbfbf6c 45%);
+  background-image: linear-gradient(to bottom, #fff 45%, #EFF1F7 45%);
 }
 .container{
   width: 90%;
@@ -41,4 +41,25 @@
 }
 .container .true{
   border-color: #f46262;
+}
+
+@media(min-width: 670px){
+  .container{
+    display: flex;
+    align-items: baseline;
+    background-image: url('/bg-shorten-desktop.svg');
+    background-size: cover;
+    justify-content: space-between;
+    padding: 1.5em 2em;
+    max-width: 835px;
+  }
+  .container div{
+    width: 70%;
+    margin: 0;
+  }.container button{
+    width: 27%;
+    padding: 0.7em 0;
+  }.container input{
+    margin: 0%;
+  }
 }

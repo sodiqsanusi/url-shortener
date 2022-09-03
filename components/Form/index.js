@@ -1,21 +1,23 @@
 import { useState } from 'react';
 import styles from './Form.module.css';
+import useSWR from 'swr'
+
+const fetcher = (...args) => fetch(...args).then((res) => res.json())
 
 const Form = () => {
 
   let [url, setUrl] = useState('')
   let [isUrlInvalid, changeValidation] = useState(false);
+  let [test, setTest] = useState(false);
+
 
   let handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Link submitted')
     let isUrlValid = /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/.test(url);
     if(isUrlValid){
-      console.log('A URL!')
       changeValidation(false);
       // todo: Use the API here to shorten the valid link!
     } else{
-      console.log('Not a url')
       changeValidation(true);
       // todo: Put in the errors
     }
