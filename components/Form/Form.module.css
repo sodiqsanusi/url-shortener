@@ -42,6 +42,23 @@
 .container .true{
   border-color: #f46262;
 }
+.loader{
+  width: 40px;
+  height: 40px;
+  margin: 2em auto 0;
+  border: 2px solid #3b3054;
+  border-radius: 50%;
+  border-left-color: #2acfcf;
+  animation: rotate 1s linear 0s infinite forwards;
+}
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
 
 @media(min-width: 670px){
   .container{
