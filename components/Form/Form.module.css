@@ -42,3 +42,24 @@
 .container .true{
   border-color: #f46262;
 }
+
+@media(min-width: 670px){
+  .container{
+    display: flex;
+    align-items: baseline;
+    background-image: url('../../public/bg-shorten-desktop.svg');
+    background-size: cover;
+    justify-content: space-between;
+    padding: 1.5em 2em;
+    max-width: 835px;
+  }
+  .container div{
+    width: 70%;
+    margin: 0;
+  }.container button{
+    width: 27%;
+    padding: 0.7em 0;
+  }.container input{
+    margin: 0%;
+  }
+}
