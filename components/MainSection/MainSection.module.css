@@ -1,6 +1,6 @@
 .container{
   padding: 4em 1em 3em;
-  background-color: #bfbfbf6c;
+  background-color: #EFF1F7;
 }
 .mainArticle{
   text-align: center;
@@ -61,4 +61,46 @@
   left: 50%;
   transform: translate(-50%, 40%);
   z-index: 1;
+}
+
+@media(min-width: 670px){
+  .container{
+    padding-top: 6em;
+  }
+  .mainArticle h2{
+    font-size: 1.7rem;
+    margin-bottom: .3em;
+  }.mainArticle p{
+    max-width: 430px;
+    margin: 0 auto;
+  }
+}
+
+@media(min-width: 1000px){
+  .container{
+    padding-bottom: 8em;
+  }
+  .cardList{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .card{
+    align-items: flex-start;
+    text-align: left;
+  }.container li:nth-of-type(2){
+    transform: translateY(40px);
+    z-index: 2;
+  }.container li:last-of-type{
+    transform: translateY(80px);
+    z-index: 2;
+  }
+
+  .listRule{
+    height: 7px;
+    width: 70%;
+    transform: translate(-50%, 500%);
+  }
 }
