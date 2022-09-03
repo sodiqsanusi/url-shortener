@@ -25,7 +25,8 @@
   row-gap: 2em;
   margin-bottom: 3em;
 }
-.linkList h4{
+.linkList h3{
+  font-size: 1rem;
   color: #efefef;
   margin-bottom: 1em;
 }.linkList a{

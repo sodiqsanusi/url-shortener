@@ -11,11 +11,11 @@ const Footer = () => {
   return ( 
     <footer className={styles.container}>
       <Link href='/'>
-        <a className={styles.footerImg}><Image src={logoImage} alt='' aria-hidden='true' role='presentation'/></a>
+        <a className={styles.footerImg}><Image src={logoImage} alt='Click to go to the homepage' aria-hidden='true' role='presentation'/></a>
       </Link>
       <ul className={styles.mainListContainer}>
         <li className={styles.linkList}>
-          <h4>Features</h4>
+          <h3>Features</h3>
           <ul>
             <li><Link href='#'><a>Link Shortening</a></Link></li>
             <li><Link href='#'><a>Branded Links</a></Link></li>
@@ -23,7 +23,7 @@ const Footer = () => {
           </ul>
         </li>
         <li className={styles.linkList}>
-          <h4>Resources</h4>
+          <h3>Resources</h3>
           <ul>
             <li><Link href='#'><a>Blog</a></Link></li>
             <li><Link href='#'><a>Developers</a></Link></li>
@@ -31,7 +31,7 @@ const Footer = () => {
           </ul>
         </li>
         <li className={styles.linkList}>
-          <h4>Company</h4>
+          <h3>Company</h3>
           <ul>
             <li><Link href='#'><a>About</a></Link></li>
             <li><Link href='#'><a>Our Team</a></Link></li>
@@ -42,9 +42,9 @@ const Footer = () => {
       </ul>
       <ul className={styles.imgList}>
         <li><a href="https://github.com/sodiqsanusi" target='_blank' rel='noreferrer'><Image src={facebookLogo} alt='Click to go to Github profile of the developer.'/></a></li>
-        <li><Link href='#'><a><Image src={twitterLogo} alt=''/></a></Link></li>
-        <li><Link href='#'><a><Image src={pinterestLogo} alt=''/></a></Link></li>
-        <li><Link href='#'><a><Image src={instaLogo} alt=''/></a></Link></li>
+        <li><Link href='#'><a><Image src={twitterLogo} alt='Click to go to the Twitter page'/></a></Link></li>
+        <li><Link href='#'><a><Image src={pinterestLogo} alt='Click to go to the Pinterest page'/></a></Link></li>
+        <li><Link href='#'><a><Image src={instaLogo} alt='Click to go to the Instagram page'/></a></Link></li>
       </ul>
     </footer>
   );
