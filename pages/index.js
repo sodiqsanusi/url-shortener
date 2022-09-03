@@ -1,14 +1,17 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { useEffect } from 'react'
+import { useContext } from 'react'
+import { GlobalContext } from '../GlobalContext'
 import BoostSection from '../components/BoostSection'
 import Footer from '../components/Footer'
 import Form from '../components/Form'
 import Header from '../components/Header'
 import MainSection from '../components/MainSection'
 import Navbar from '../components/Navbar'
+import ShortenedLinks from '../components/ShortenedLinks'
 
 export default function Home() {
+
+  let {allShortenedLinks} = useContext(GlobalContext);
 
   return (
     <>
@@ -20,6 +23,7 @@ export default function Home() {
       <Navbar/>
       <Header />
       <Form />
+      {allShortenedLinks && <ShortenedLinks data={allShortenedLinks}/>}
       <MainSection />
       <BoostSection />
       <Footer />

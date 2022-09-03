@@ -1,10 +1,12 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import {GlobalContext} from '../../GlobalContext';
 import styles from './Form.module.css';
-import useSWR from 'swr'
 
 const fetcher = (...args) => fetch(...args).then((res) => res.json())
 
 const Form = () => {
+
+  let {changeShortenedLinks} = useContext(GlobalContext)
 
   let [url, setUrl] = useState('')
   let [isUrlInvalid, changeValidation] = useState(false);
@@ -30,7 +32,7 @@ const Form = () => {
             throw Error
           }
           changeFetchValidation(false);
-          console.log(data)
+          changeShortenedLinks(allShortenedLinks => [...allShortenedLinks, data])
         }
       ).catch(
         err => {
