@@ -33,3 +33,30 @@
   width: 60%;
   max-width: 155px;
 }
+
+@media(min-width: 670px){
+  .header{
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    width: 90%;
+    margin-left: auto;
+    max-width: 1160px;
+    margin-top: 1.5em;
+    align-items: center;
+  }
+  .headerArticle{
+    text-align: left;
+    max-width: 380px;
+    margin-left: 0;
+  }.headerArticle h1{
+    font-size: 3rem;
+    margin-bottom: .1em;
+  }.headerArticle p{
+    padding-right: 1em;
+  }
+  .headerImage{
+    width: 100%;
+    left: 10%;
+    max-width: 600px;
+  }
+}
