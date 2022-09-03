@@ -57,7 +57,7 @@ const Form = () => {
           className={styles[isUrlInvalid]}
           />
           {isUrlInvalid && <p className={styles.errMessage}>Please add a valid link</p>}
-          {isFetchInvalid && <p className={styles.errMessage}>This link can't be shortened for security reasons</p>}
+          {isFetchInvalid && <p className={styles.errMessage}>This link can&apos;t be shortened for security reasons</p>}
         </div>
         <button>Shorten it!</button>
       </form>
