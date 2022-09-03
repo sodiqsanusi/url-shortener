@@ -8,7 +8,8 @@ const Form = () => {
 
   let [url, setUrl] = useState('')
   let [isUrlInvalid, changeValidation] = useState(false);
-  let [test, setTest] = useState(false);
+  let [isFetchInvalid, changeFetchValidation] = useState(false);
+  let [isLoading, setLoading] = useState(false);
 
 
   let handleSubmit = (e) => {
@@ -16,10 +17,30 @@ const Form = () => {
     let isUrlValid = /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/.test(url);
     if(isUrlValid){
       changeValidation(false);
-      // todo: Use the API here to shorten the valid link!
+      setLoading(true);
+      //* Fetching the short link of the inputted URL.
+      fetch(`https://api.shrtco.de/v2/shorten?url=${url}`).then(
+        res => {
+          setLoading(false);
+          return res.json()
+        }
+      ).then(
+        data => {
+          if(data.ok == false){
+            throw Error
+          }
+          changeFetchValidation(false);
+          console.log(data)
+        }
+      ).catch(
+        err => {
+          console.log(err);
+          changeFetchValidation(true);
+        }
+      )
     } else{
       changeValidation(true);
-      // todo: Put in the errors
+      changeFetchValidation(false);
     }
   }
 
@@ -34,9 +55,11 @@ const Form = () => {
           className={styles[isUrlInvalid]}
           />
           {isUrlInvalid && <p className={styles.errMessage}>Please add a valid link</p>}
+          {isFetchInvalid && <p className={styles.errMessage}>This link can't be shortened for security reasons</p>}
         </div>
         <button>Shorten it!</button>
       </form>
+      {isLoading && <div className={styles.loader}></div>}
     </div>  
   );
 }
