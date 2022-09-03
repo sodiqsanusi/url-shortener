@@ -45,3 +45,27 @@
 }.imgList a:hover img, .imgList a:focus img{
   filter: invert(70%) sepia(100%) saturate(1901%) hue-rotate(197deg) brightness(160%) contrast(80%);
 }
+
+@media(min-width: 670px){
+  .container{
+    flex-direction: row;
+    align-items: baseline;
+    padding: 3em 10%;
+  }.container ul{
+    align-self: flex-start;
+  }
+  .mainListContainer{
+    width: 50%;
+    max-width: 500px;
+    text-align: left;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: baseline;
+  }
+  .imgList{
+    width: 25%;
+  }
+  .linkList li{
+    margin-bottom: .5em;
+  }
+}
